@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";  // CSS 파일이 없으면 생략 가능
 
 const questions = [
   { id: 1, text: "새로운 아이디어나 프로젝트 때문에 이전에 하던 일에 종종 집중하지 못할 때가 있다.", reverse: true },
