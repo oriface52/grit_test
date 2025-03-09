@@ -4,17 +4,16 @@
     "description": "Grit Test Web App",
     "main": "src/main.jsx",
     "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "start": "vite preview"
+        "dev": "vite",
+        "build": "vite build",
+        "start": "vite preview"
     },
     "dependencies": {
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
-      "vite": "^4.0.0",
-      "@vitejs/plugin-react": "^3.0.0"
+        "@vitejs/plugin-react": "^3.1.0",
+        "vite": "^4.0.0"
     }
-  }
-  
+}
