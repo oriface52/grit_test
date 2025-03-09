@@ -1,9 +1,8 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import ReactDOM from "react-dom/client";
-import App from "./App";
 import "./index.css";  // CSS 파일이 없으면 생략 가능
 
 const questions = [
@@ -21,7 +20,7 @@ const questions = [
 
 const scores = [5, 4, 3, 2, 1];
 
-export default function GritQuiz() {
+function GritQuiz() {
   const [responses, setResponses] = useState(Array(10).fill(null));
   const [step, setStep] = useState(0);
 
@@ -79,3 +78,14 @@ export default function GritQuiz() {
     </div>
   );
 }
+
+// 🔹 `index.html` 없이 동작하도록 `div#root`를 동적으로 생성
+const root = document.createElement("div");
+root.id = "root";
+document.body.appendChild(root);
+
+ReactDOM.createRoot(root).render(
+  <React.StrictMode>
+    <GritQuiz />
+  </React.StrictMode>
+);
