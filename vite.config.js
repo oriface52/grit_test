@@ -6,7 +6,6 @@ export default defineConfig({
   build: {
     outDir: 'dist'
   },
-  publicDir: 'public',  // ✅ public 폴더 설정
-  root: '.'  // ✅ 프로젝트 루트 폴더 설정
+  publicDir: 'public'  // ✅ index.html이 있는 폴더 지정
 });
 
