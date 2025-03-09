@@ -1,0 +1,19 @@
+{
+    "name": "grit_test",
+    "version": "1.0.0",
+    "description": "Grit Test Web App",
+    "main": "src/index.js",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "start": "vite preview"
+    },
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "vite": "^4.0.0"
+    }
+  }
+  
