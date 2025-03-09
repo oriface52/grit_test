@@ -1,0 +1,6 @@
+# node_modules는 Git에 올리면 안 됨!
+node_modules/
+dist/
+.vscode/
+.DS_Store
+.env
